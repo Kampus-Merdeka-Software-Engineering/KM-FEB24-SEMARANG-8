@@ -1,0 +1,185 @@
+:root {
+  --color1: #292929;
+  --color2: #585858;
+  --color3: #ffc815;
+  --color4: #ffffff;
+  --color5: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: #292929;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 75px;
+}
+
+.logo {
+  align-items: center;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo-text {
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 15px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  border-radius: 3px;
+  padding: 7px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background-color: #ffc815;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 952px) {
+
+  nav {
+    padding: 0 50px;
+  }
+
+  .logo-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 858px) {
+  
+  nav {
+    padding: 0 50px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    background-color: #585858;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    margin: 30px 0;
+  }
+
+  nav ul li a {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #ffc815;
+  }
+
+  .checkbtn {
+    display: block;
+    order: 1;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  nav {
+    padding: 0 35px;
+  }
+
+  .logo img {
+    width: 45px;
+  }
+
+  .logo-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+
+  nav {
+    padding: 0 35px;
+  }
+
+  .logo img {
+    width: 40px;
+  }
+
+  .logo-text {
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 7px;
+  }
+} */
+
+section {
+  background: url(/images/2641074.gif) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
