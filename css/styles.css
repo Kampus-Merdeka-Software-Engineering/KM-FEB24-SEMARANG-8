@@ -115,6 +115,22 @@ img {
   overflow: hidden;
 }
 
+.shape {
+  background-color: hsla(219, 3%, 32%, 0.5);
+  filter: blur(112px);
+  border-radius: 50%;
+}
+
+.shape__big {
+  width: 400px;
+  height: 400px;
+}
+
+.shape__small {
+  width: 300px;
+  height: 300px;
+}
+
 /* -----header & nav----- */
 .header {
   width: 100%;
@@ -203,4 +219,142 @@ img {
 /* -----show menu----- */
 .show-menu {
   right: 0;
+}
+
+.scroll-header {
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--body-color);
+  box-shadow: 0 2px 4px hsla(0, 0%, 1%, 1);
+}
+
+/* -----home----- */
+.home {
+  position: relative;
+  overflow: hidden;
+}
+
+.home__container {
+  position: relative;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 1rem;
+}
+
+.home__subtitle {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.home__elec {
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.home__elec i {
+  color: var(--first-color);
+}
+
+.home__img {
+  width: 350px;
+  justify-self: center;
+}
+
+.home__bike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.home__bike-name {
+  font-size: 0.625rem;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+
+.home__bike-data {
+  text-align: center;
+}
+
+.home__bike-number {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.25rem;
+}
+
+.home__bike-icon {
+  background-color: var(--container-color);
+  border-radius: 50%;
+  padding: 0.376rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.home__button {
+  position: relative;
+  border: 2px solid hsl(158, 89%, 30%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  font-size: var(--small-font-size);
+  color: var(--white-color);
+  font-weight: font var(--font-medium);
+}
+
+.home__button::before {
+  content: "";
+  border: 2px solid hsl(158, 98%, 43%);
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  transition: 0.3s;
+  animation: button 3s infinite;
+}
+
+.home .shape__big,
+.home .shape__small {
+  position: absolute;
+}
+
+.home .shape__big {
+  left: -9rem;
+  top: -4rem;
+}
+
+.home .shape__small {
+  right: -10rem;
+  bottom: 3rem;
+}
+
+/* -----button animate----- */
+@keyframes button {
+  0% {
+    box-shadow: 0 0 12px hsl(158, 98%, 43%);
+  }
+
+  50% {
+    box-shadow: 0 0 24px hsl(158, 98%, 43%);
+  }
 }
