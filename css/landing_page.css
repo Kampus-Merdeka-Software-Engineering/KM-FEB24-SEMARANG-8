@@ -13,7 +13,7 @@
   --text-color: hsl(219, 8%, 75%);
   --text-color-light: hsl(219, 4%, 55%);
   --white-color: #fff;
-  --body-color: hsl(219, 4%, 4%);
+  --body-color: #0F1E43;
   --container-color: hsl(219, 4%, 7%);
 
   --color1: #292929;
@@ -258,6 +258,7 @@ img {
 }
 
 .home__container {
+  /* background-color: grey; */
   position: relative;
   padding-top: 6.4rem; /* 64 */
   row-gap: 4.8rem; /* 48 */
@@ -452,6 +453,7 @@ img {
 /* -----ABOUT----- */
 .about__container {
   row-gap: 9.6rem; /* 96 */
+  /* background-color: grey; */
 }
 
 .about__group {
@@ -498,11 +500,12 @@ img {
 /* -----Section Team----- */
 .popular__container {
   padding-top: 1.6rem; /* 16 */
+  /* background-color: grey; */
 }
 
 .popular__card {
   position: relative;
-  width: 238px;
+  width: 258px;
   background-color: white;
   /* padding: 3.2rem 2.4rem 2.4rem; */
   border-radius: 25px; /* 16 */
@@ -530,7 +533,7 @@ img {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--color3);
+  background-color: #E8AF30;
   border-radius: 25px 25px 0 25px;
 }
 
@@ -583,7 +586,7 @@ img {
   border: none;
   color: #fff;
   padding: 8px 16px;
-  background-color: var(--color3);
+  background-color: #E8AF30;
   border-radius: 6px;
   margin: 14px;
   cursor: pointer;
@@ -600,7 +603,7 @@ img {
 
 .swiper-pagination-bullet-active {
   background-color: var(--first-color);
-}
+} */
 
 /* -----OUR TEAM----- */
 /* .popular__container {
@@ -693,7 +696,7 @@ img {
 
 .swiper-pagination-bullet-active {
   background-color: var(--first-color);
-} */
+}
 
 /* -----FOOTER----- */
 .footer {
@@ -721,6 +724,7 @@ img {
 .footer__container {
   row-gap: 4rem; /* 40 */
   position: relative;
+  /* background-color: grey; */
 }
 
 .footer__logo {
@@ -905,7 +909,7 @@ img {
   }
 
   .popular__container {
-    width: 875px;
+    /* width: 875px; */
     padding-top: 4.8rem; /* 48 */
   }
 
