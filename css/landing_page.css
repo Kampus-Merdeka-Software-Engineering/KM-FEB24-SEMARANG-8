@@ -545,7 +545,7 @@ img {
   width: 40px;
   right: 0;
   bottom: -40px;
-  background-color: var(--color3);
+  background-color: #E8AF30;
 }
 
 .team__image-content-overlay::after {
