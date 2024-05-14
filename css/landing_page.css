@@ -498,12 +498,12 @@ img {
 }
 
 /* -----Section Team----- */
-.popular__container {
+.team__container {
   padding-top: 1.6rem; /* 16 */
   /* background-color: grey; */
 }
 
-.popular__card {
+.team__card {
   position: relative;
   width: 258px;
   background-color: white;
@@ -513,21 +513,21 @@ img {
   overflow: hidden;
 }
 
-.popular__image-content,
-.popular__card-content {
+.team__image-content,
+.team__card-content {
   padding: 10px 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.popular__image-content {
+.team__image-content {
   position: relative;
   row-gap: 5px;
   padding: 25px 0;
 }
 
-.popular__image-content-overlay {
+.team__image-content-overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -537,8 +537,8 @@ img {
   border-radius: 25px 25px 0 25px;
 }
 
-.popular__image-content-overlay::before,
-.popular__image-content-overlay::after {
+.team__image-content-overlay::before,
+.team__image-content-overlay::after {
   content: "";
   position: absolute;
   height: 40px;
@@ -548,12 +548,12 @@ img {
   background-color: var(--color3);
 }
 
-.popular__image-content-overlay::after {
+.team__image-content-overlay::after {
   border-radius: 0 25px 0 0;
   background-color: white;
 }
 
-.popular__card-image {
+.team__card-image {
   position: relative;
   height: 150px;
   width: 150px;
@@ -562,7 +562,7 @@ img {
   padding: 3px;
 }
 
-.popular__card-image .popular__card-img {
+.team__card-image .team__card-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -570,19 +570,19 @@ img {
   border: 4px solid var(--color3);
 }
 
-.popular__name {
+.team__card-content-name {
   font-size: 18px;
   font-weight: 500;
   color: #333;
 }
 
-.popular__desc {
+.team__card-content-desc {
   font-size: 14px;
   color: #707070;
   text-align: center;
 }
 
-.popular__team-button {
+.team__card-content-button {
   border: none;
   color: #fff;
   padding: 8px 16px;
@@ -593,7 +593,7 @@ img {
   transition: all 0 0.3s ease;
 }
 
-.popular__team-button:hover {
+.team__card-content-button:hover {
   background: #585858;
 }
 
@@ -606,11 +606,11 @@ img {
 } */
 
 /* -----OUR TEAM----- */
-/* .popular__container {
+/* .team__container {
   padding-top: 1.6rem;
 }
 
-.popular__card {
+.team__card {
   position: relative;
   width: 238px;
   background-color: white;
@@ -619,7 +619,7 @@ img {
   overflow: hidden;
 } */
 
-/* .popular__card .shape__smaller {
+/* .team__card .shape__smaller {
   position: absolute;
   top: -4rem;
   left: -4rem;
@@ -686,7 +686,7 @@ img {
   font-size: 2rem;
 } */
 
-/* .popular__card:hover .popular__img {
+/* .team__card:hover .popular__img {
   transform: translateY(-0.4rem);
 } */
 
@@ -908,12 +908,12 @@ img {
     margin-bottom: 4.8rem; /* 48 */
   }
 
-  .popular__container {
+  .team__container {
     /* width: 875px; */
     padding-top: 4.8rem; /* 48 */
   }
 
-  .popular__card {
+  .team__card {
     width: 258px;
     border-radius: 2.5rem;
     margin-bottom: 8rem; /* 80 */
