@@ -35,7 +35,7 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader);
 
 // -----swiper js-----
-let swiperPopular = new Swiper(".popular__container", {
+let swiperPopular = new Swiper(".team__container", {
   loop: true,
   spaceBetween: 24,
   grabCursor: true,
