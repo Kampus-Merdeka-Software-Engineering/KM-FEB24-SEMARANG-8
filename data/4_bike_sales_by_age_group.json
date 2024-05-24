@@ -1,0 +1,17 @@
+[{
+  "Age_Group": "Seniors (64+)",
+  "Product_Category": "Bikes",
+  "Sum_quantity": "80"
+}, {
+  "Age_Group": "Youth (\u003c25)",
+  "Product_Category": "Bikes",
+  "Sum_quantity": "4997"
+}, {
+  "Age_Group": "Young Adults (25-34)",
+  "Product_Category": "Bikes",
+  "Sum_quantity": "13642"
+}, {
+  "Age_Group": "Adults (35-64)",
+  "Product_Category": "Bikes",
+  "Sum_quantity": "17482"
+}]

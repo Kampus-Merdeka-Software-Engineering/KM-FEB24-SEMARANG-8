@@ -1,0 +1,49 @@
+[{
+  "Product_Category": "Accessories",
+  "Total_revenue": "1377060",
+  "Country": "France"
+}, {
+  "Product_Category": "Accessories",
+  "Total_revenue": "1538472",
+  "Country": "Germany"
+}, {
+  "Product_Category": "Accessories",
+  "Total_revenue": "1862978",
+  "Country": "United Kingdom"
+}, {
+  "Product_Category": "Accessories",
+  "Total_revenue": "2265769",
+  "Country": "Canada"
+}, {
+  "Product_Category": "Accessories",
+  "Total_revenue": "2727399",
+  "Country": "Australia"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "4262618",
+  "Country": "Canada"
+}, {
+  "Product_Category": "Accessories",
+  "Total_revenue": "5251088",
+  "Country": "United States"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "6316991",
+  "Country": "France"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "6781256",
+  "Country": "Germany"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "7796471",
+  "Country": "United Kingdom"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "16867194",
+  "Country": "Australia"
+}, {
+  "Product_Category": "Bikes",
+  "Total_revenue": "19409954",
+  "Country": "United States"
+}]
