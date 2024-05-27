@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Mendapatkan data JSON dari file
-  fetch("/data/4_bike_sales_by_age_group.json")
+  fetch("data/4_bike_sales_by_age_group.json")
     .then((response) => response.json())
     .then((data) => {
       // Proses data JSON
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const quantities = data.map((item) => parseInt(item.Sum_quantity, 10));
 
       // Create the chart
-      const ctx = document.getElementById("myChart").getContext("2d");
+      const ctx = document.getElementById("myChart4").getContext("2d");
       const salesChart = new Chart(ctx, {
         type: "bar",
         data: {
@@ -28,7 +28,17 @@ document.addEventListener("DOMContentLoaded", function () {
           scales: {
             y: {
               beginAtZero: true,
+              title: {
+                display: true,
+                text: "Bike Sales"
+              }
             },
+            x: {
+              title: {
+                  display: true,
+                  text: "Age Group"
+              }
+            }
           },
         },
       });

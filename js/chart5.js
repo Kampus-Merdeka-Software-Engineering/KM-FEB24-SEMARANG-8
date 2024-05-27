@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const data = Object.values(salesByGender);
 
       // Create the chart
-      const ctx = document.getElementById("myChart2").getContext("2d");
+      const ctx = document.getElementById("myChart5").getContext("2d");
       new Chart(ctx, {
         type: "doughnut",
         data: {
@@ -44,6 +44,10 @@ document.addEventListener("DOMContentLoaded", function () {
         options: {
           responsive: true,
           plugins: {
+            title: {
+              display: true,
+              text: 'Bike Sales by Gender'
+            },
             legend: {
               position: "top",
             },
