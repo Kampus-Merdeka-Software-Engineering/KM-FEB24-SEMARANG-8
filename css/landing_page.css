@@ -634,8 +634,15 @@ img {
   background-color: #fff;
 } */
 
-.visual__container {
-  background-color: #fff;
+.visual_container1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7rem;
+}
+
+.visual__container2 {
+  /* background-color: #fff; */
   align-items: center;
   display: flex;
   justify-content: center;
@@ -645,9 +652,14 @@ img {
 }
 
 .chart {
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
   padding: 2rem;
-  border: 1px solid #e8af30;
-  border-radius: 1rem;
+  border: 2px solid #e8af30;
   background: var(--color1);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
 }
@@ -745,6 +757,15 @@ img {
   background-color: var(--first-color);
 }
 
+/* CHART */
+/* .chart {
+  width: 450px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+} */
 /* -----FOOTER----- */
 .footer {
   position: relative;
