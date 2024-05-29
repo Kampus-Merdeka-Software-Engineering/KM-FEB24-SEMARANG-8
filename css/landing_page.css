@@ -31,6 +31,11 @@
   --small-font-size: 1.3rem; /* 13 */
   --smaller-font-size: 1.2rem; /* 12 */
 
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+
   --font-medium: 500;
   --font-semi-bold: 600;
 }
@@ -864,6 +869,33 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: hsl(219, 4%, 32%);
+}
+
+/*========== SCROLL UP ==========*/
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--color3);
+  opacity: .8;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index:var(--z-tooltip);
+  transition: .4s;
+}
+
+.scrollup:hover{
+  background-color:var(--color2);
+}
+
+.scrollup__icon{
+  font-size: 1.5rem;
+  color: black
+}
+
+/* Show scroll */
+.show-scroll{
+  bottom: 5rem;
 }
 
 /* -----RESPONSIVE----- */
