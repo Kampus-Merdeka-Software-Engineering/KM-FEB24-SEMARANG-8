@@ -42,8 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 plugins: {
                   title: {
                     display: true,
-                    text: 'Total Revenue by Country'
+                    text: 'Total Revenue by Country',
+                    color: "#e8af30",
+                    font: {
+                        family: 'Exo',
+                        size: 18,
+                        style: 'bold'
+                    }
                   },
+                  legend: {
+                    labels: {
+                        font: {
+                            family: 'Exo',
+                            size: 12,
+                            style: 'normal'
+                        }
+                    }
+                  }
                 },
                 responsive: true,
                 interaction: {
@@ -54,16 +69,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     stacked: true,
                     title: {
                         display: true,
-                        text: "Country"
+                        text: "Country",
+                        font: {
+                            family: 'Exo',
+                            size: 16,
+                            style: 'bold'
+                        }
+                    },
+                    grid: {
+                        color: "rgba(211, 211, 211, 0.1)" // Warna grid diubah menjadi abu-abu muda
                     }
                   },
                   y: {
                     stacked: true,
                     beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: "Total Revenue"
+                    title: {
+                        display: true,
+                        text: "Total Revenue",
+                        font: {
+                            family: 'Exo',
+                            size: 16,
+                            style: 'bold'
                         }
+                    },
+                    grid: {
+                        color: "rgba(211, 211, 211, 0.1)" // Warna grid diubah menjadi abu-abu muda
+                    }
                   }
                 }
               }

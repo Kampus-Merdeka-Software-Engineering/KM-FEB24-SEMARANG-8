@@ -46,10 +46,23 @@ document.addEventListener("DOMContentLoaded", function () {
           plugins: {
             title: {
               display: true,
-              text: 'Bike Sales by Gender'
+              text: "Bike Sales By Gender",
+              color: "#e8af30",
+              font: {
+                family: "Exo",
+                size: 18,
+                style: "bold",
+              },
             },
             legend: {
               position: "top",
+              labels: {
+                font: {
+                  size: 12, // Ukuran font legend dikecilkan
+                  family: 'Exo',
+                  style: 'normal'
+                }
+              }
             },
             tooltip: {
               callbacks: {

@@ -25,20 +25,51 @@ document.addEventListener("DOMContentLoaded", function () {
           },
           options: {
             responsive: true,
+            plugins: {
+              legend: {
+                display: false
+              },
+              title: {
+                display: true,
+                text: 'Bike Sales By Country',
+                color: "#e8af30",
+                font: {
+                  family: 'Exo',
+                  size: 18,
+                  style: 'bold'
+                }
+              }
+            },
             scales: {
               y: {
                 beginAtZero: true,
                 title: {
                     display: true,
-                    text: "Bike Sales"
+                    text: "Bike Sales",
+                    font: {
+                      family: 'Exo',
+                      size: 16,
+                      style: 'bold'
+                    }
+                },
+                grid: {
+                  color: "rgba(211, 211, 211, 0.1)"
                 }
               },
               x: {
                 title: {
                     display: true,
-                    text: "Country"
+                    text: "Country",
+                    font: {
+                      family: 'Exo',
+                      size: 16,
+                      style: 'bold'
+                    }
+                },
+                grid: {
+                  color: "rgba(211, 211, 211, 0.1)"
                 }
-                }
+              }
             },
           },
         });
@@ -47,4 +78,3 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error("Error fetching data:", error);
       });
   });
-  

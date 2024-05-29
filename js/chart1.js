@@ -47,25 +47,58 @@ document.addEventListener("DOMContentLoaded", function () {
                 plugins: {
                     title: {
                       display: true,
-                      text: 'Total Revenue per Year'
+                      text: 'Total Revenue per Year',
+                      color: "#e8af30",
+                      font: {
+                          size: 18,
+                          family: 'Exo',
+                          style: 'bold',
+                          lineHeight: 1.2,
+                      }
                     },
-                  },
-                  responsive: true,
-                  interaction: {
+                    legend: {
+                        labels: {
+                            // color: "#",
+                            font: {
+                                size: 12,
+                                family: 'Exo',
+                                style: 'normal',
+                            }
+                        }
+                    }
+                },
+                responsive: true,
+                interaction: {
                     intersect: false,
-                  },
+                },
                 scales: {
                     y: {
                         beginAtZero: true,
                         title: {
                             display: true,
-                            text: "Total Revenue"
+                            text: "Total Revenue",
+                            font: {
+                                size: 16,
+                                family: 'Exo',
+                                style: 'bold'
+                            }
+                        },
+                        grid: {
+                            color: "rgba(211, 211, 211, 0.1)" // Warna grid diubah menjadi lebih transparan
                         }
                     },
                     x: {
                         title: {
                             display: true,
-                            text: "Year"
+                            text: "Year",
+                            font: {
+                                size: 16,
+                                family: 'Exo',
+                                style: 'bold'
+                            }
+                        },
+                        grid: {
+                            color: "rgba(211, 211, 211, 0.1)" // Warna grid diubah menjadi lebih transparan
                         }
                     }
                 }

@@ -797,7 +797,6 @@ img {
 .footer__container {
   row-gap: 4rem; /* 40 */
   position: relative;
-  /* background-color: grey; */
 }
 
 .footer__logo {

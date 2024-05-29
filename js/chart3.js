@@ -30,16 +30,25 @@ document.addEventListener('DOMContentLoaded', function() {
                     }]
                 },
                 options: {
-                    
                     responsive: true,
                     plugins: {
                         legend: {
                             position: 'top',
+                            labels: {
+                                font: {
+                                    family: 'Exo',
+                                    size: 12,
+                                    style: 'normal'
+                                },
+                                boxWidth: 10, // Mengatur lebar kotak warna di legenda
+                                padding: 10 // Menambah padding untuk memastikan semua item legenda dalam satu baris
+                            }
                         },
                         tooltip: {
-                            backgroundColor: 'rgba(0, 0, 0, 0)', // Menghilangkan background tooltip
+                            backgroundColor: 'rgba(0, 0, 0, 0.7)', // Menambahkan background tooltip
                             bodyFont: {
-                                size: 14
+                                size: 12,
+                                // family: 'Exo'
                             },
                             callbacks: {
                                 label: function(context) {
@@ -48,6 +57,16 @@ document.addEventListener('DOMContentLoaded', function() {
                                     return `${label}: $${value.toLocaleString()}`;
                                 }
                             }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Bike Sales Per Sub Category',
+                            color: "#e8af30",
+                            font: {
+                                family: 'Exo',
+                                size: 18,
+                                style: 'bold'
+                            }
                         }
                     },
                     scales: {
@@ -55,6 +74,9 @@ document.addEventListener('DOMContentLoaded', function() {
                             ticks: {
                                 beginAtZero: true,
                                 backdropColor: 'rgba(0, 0, 0, 0)' // Menghilangkan background dari satuan angka
+                            },
+                            grid: {
+                                color: "rgba(211, 211, 211, 0.1)" // Warna grid diubah menjadi lebih transparan
                             }
                         }
                     }
