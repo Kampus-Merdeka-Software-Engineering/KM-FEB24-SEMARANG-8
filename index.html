@@ -451,12 +451,11 @@
         <section class="visual section" id="visual">
             <div class="visual_container1 container grid">
                 <h2>Visualizations</h2>
-                <!-- Dropdown untuk memilih gender -->
-                <!-- <select id="genderFilter" onchange="filterByGender()">
-                    <option value="All">Semua Gender</option>
-                    <option value="Male">Pria</option>
-                    <option value="Female">Wanita</option>
-                </select> -->
+                <select id="dropdown">
+                    <!-- <option value="Bikes">Bikes</option> -->
+                    <!-- Opsi akan ditambahkan secara dinamis -->
+                </select>
+                <button id="apply">Apply</button> <!-- Tambahkan ini -->
             </div>
             <div class="visual__container2 container grid">
                 <div class="chart">
@@ -466,7 +465,7 @@
                     <canvas id="myChart2" width="450" height="350"></canvas>
                 </div>
                 <div class="chart">
-                    <canvas id="myChart3" width="450" ></canvas>
+                    <canvas id="myChart3" width="450"></canvas>
                 </div>
                 <div class="chart">
                     <canvas id="myChart4" width="390" height="300"></canvas>
