@@ -4,7 +4,7 @@
         "role": "Project Leader",
         "desc": "Institut Teknologi dan Bisnis STIKOM Bali",
         "prodi": "Sistem Informasi",
-        "img": "images/yusuf.JPG",
+        "img": "images/yusuf.png",
         "linkedin": "https://www.linkedin.com/in/yusuf-nurrahman-majiid"
     },
     {
@@ -12,7 +12,7 @@
         "role": "Data Analysis & Front-End Engineer",
         "desc": "Universitas Singaperbangsa Karawang",
         "prodi": "Akuntansi",
-        "img": "images/Abdullah Hendriawan.png",
+        "img": "images/abdullah.png",
         "linkedin": "https://www.linkedin.com/in/abdullahhendriawan"
     },
     {
@@ -20,14 +20,14 @@
         "role": "Data Visual & Front-End Engineer",
         "desc": "Universitas Pendidikan Indonesia",
         "prodi": "Matematika",
-        "img": "images/barqy_ilhan_foto.png",
+        "img": "images/barqy.png",
         "linkedin": "https://www.linkedin.com/in/barqy-muhammad-ilhan"
     },
     {
         "name": "Sandra Christella G",
         "role": "Data Cleaning & Front-End Engineer",
         "desc": "Universitas Katolik Parahyangan",
-        "img": "images/Sandra Christella G.jpg",
+        "img": "images/sandra.png",
         "prodi": "Matematika",
         "linkedin": "https://www.linkedin.com/in/sandra-christella-gunawan"
     },
@@ -44,7 +44,7 @@
         "role": "Deployment Team",
         "desc": "Universitas Muslim Indonesia",
         "prodi": "Sistem Informasi",
-        "img": "images/MuhammadAkbar.png",
+        "img": "images/akbar.png",
         "linkedin": "https://www.linkedin.com/in/muhammad-akbar-659103272"
     },
     {
@@ -60,7 +60,7 @@
         "role": "Pitch Desk PIC",
         "desc": "Universitas Udayana",
         "prodi": "Ilmu Komunikasi",
-        "img": "images/Stephanie Charlotte.jpeg",
+        "img": "images/stephanie.png",
         "linkedin": "https://www.linkedin.com/in/stephanie-charlotte/"
     },
     {
@@ -68,7 +68,7 @@
         "role": "Pitch Desk PIC",
         "desc": "Unknown",
         "prodi": "Unknown",
-        "img": "images/widianti.jpg",
+        "img": "images/widianti.png",
         "linkedin": "https://www.linkedin.com/in/jihanhajidahwibowo/"
     },
     {
@@ -76,7 +76,7 @@
         "role": "Pitch Desk PIC",
         "desc": "Universitas Muhammadiyah Jakarta",
         "prodi": "Pendidikan Bahasa",
-        "img": "images/widianti.jpg",
+        "img": "images/.png",
         "linkedin": "https://www.linkedin.com/in/jihanhajidahwibowo/"
     },
     {
@@ -84,7 +84,7 @@
         "role": "Quality Assurance",
         "desc": "Universitas Negeri Malang",
         "prodi": "Teknologi Pendidikan",
-        "img": "images/Husein Maliki.JPG",
+        "img": "images/husein.png",
         "linkedin": "https://www.linkedin.com/in/husein-maliki-89984a24b"
     },
     {
@@ -92,7 +92,7 @@
         "role": "Quality Assurance",
         "desc": "Universitas Cendekia Abditama",
         "prodi": "Teknik Informatika",
-        "img": "images/Nurul Hidayah.jpg",
+        "img": "images/nurul.png",
         "linkedin": "https://www.linkedin.com/in/nurul-hidayah-551135222"
     },
     {
@@ -100,7 +100,7 @@
         "role": "Quality Assurance",
         "desc": "Unknown",
         "prodi": "Unknown",
-        "img": "images/nadia.jpg",
+        "img": "images/nadia.png",
         "linkedin": ""
     }
 ]
