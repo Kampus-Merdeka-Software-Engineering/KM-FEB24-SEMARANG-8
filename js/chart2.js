@@ -410,6 +410,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     datasets: datasets
                 },
                 options: {
+                    aspectRatio: 1,
                     plugins: {
                       title: {
                         display: true,
@@ -483,4 +484,3 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch(error => console.error("Error loading data:", error));
 });
-

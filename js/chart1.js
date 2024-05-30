@@ -418,8 +418,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     ]
                 },
                 options: {
+                    aspectRatio: 1,
                     plugins: {
                         title: {
+
                           display: true,
                           text: 'Total Revenue per Year',
                           color: "#e8af30",
