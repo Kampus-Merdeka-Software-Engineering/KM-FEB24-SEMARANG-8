@@ -34,23 +34,10 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-// -----swiper js-----
-let swiperPopular = new Swiper(".team__container", {
-  loop: true,
-  spaceBetween: 24,
-  grabCursor: true,
-
-  slidesPerView: "auto",
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      spaceBetween: 48,
-    },
-  },
-});
+/*-----------show scroll up-------------*/
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+  else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
