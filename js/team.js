@@ -1,10 +1,10 @@
 // Ambil data dari file JSON
-fetch('data/team.json')
-    .then(response => response.json())
-    .then(data => {
-        // Lakukan looping melalui data dan buat kartu untuk setiap anggota tim
-        data.forEach(member => {
-            let teamCard = `
+fetch("data/team.json")
+  .then((response) => response.json())
+  .then((data) => {
+    // Lakukan looping melalui data dan buat kartu untuk setiap anggota tim
+    data.forEach((member) => {
+      let teamCard = `
                 <article class="team__card swiper-slide">
                     <div class="team__image-content">
                         <span class="team__image-content-overlay"></span>
@@ -24,13 +24,14 @@ fetch('data/team.json')
                 </article>
             `;
 
-            // Tambahkan kartu ke dalam DOM
-            document.querySelector('#swiperWrapper').innerHTML += teamCard;
-        });
+      // Tambahkan kartu ke dalam DOM
+      document.querySelector("#swiperWrapper").innerHTML += teamCard;
+    });
 
-        // Inisialisasi Swiper setelah semua slide telah ditambahkan
-        var swiper = new Swiper('.swiper-container', {
-            // Konfigurasi Swiper Anda di sini
-        });
-    })
-    .catch(error => console.error('Error:', error));
+    // Inisialisasi Swiper setelah semua slide telah ditambahkan
+    var swiper = new Swiper(".swiper-container", {
+      // Konfigurasi Swiper Anda di sini
+    });
+  })
+  .catch((error) => console.error("Error:", error));
+  
