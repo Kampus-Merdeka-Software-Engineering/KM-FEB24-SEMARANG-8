@@ -586,36 +586,58 @@ img {
 
 .team__card-content-name {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
 }
 .team__card-content-role {
-  font-size: 12px;
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
   font-weight: 400;
   color: #333;
 }
 
 .team__card-content-desc {
-  font-size: 14px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   color: #707070;
   text-align: center;
-  padding: 10px;
+
+  /* padding: 10px; */
 }
+
+.team__card-content-prodi {
+  font-size: 1.3rem;
+  color: #707070;
+  text-align: center;
+  position: absolute;
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .team__card-content-button {
+  border: none;
+  color: var(--color5);
+  font-size: 4rem;
+  cursor: pointer;
+  transition: all 0 0.3s ease;
+} */
 
 .team__card-content-button {
   border: none;
-  color: #fff;
-  padding: 8px 16px;
-  background-color: #e8af30;
-  border-radius: 6px;
-  margin: 14px;
+  color: var(--color5);
+  font-size: 4rem;
   cursor: pointer;
   transition: all 0 0.3s ease;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.team__card-content-button:hover {
+/* .team__card-content-button:hover {
   background: #585858;
-}
+} */
 
 .swiper-pagination-bullet {
   background: var(--text-color);
@@ -683,7 +705,7 @@ img {
   padding: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #007BFF;
+  background-color: #007bff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
