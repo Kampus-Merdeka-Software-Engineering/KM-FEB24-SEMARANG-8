@@ -682,6 +682,8 @@ img {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.8);
 }
 
+
+
 .visual-button {
   display: flex;
   justify-content: space-between;
@@ -841,6 +843,8 @@ img {
 .show-scroll {
   bottom: 5rem;
 }
+
+
 
 /* -----RESPONSIVE----- */
 @media screen and (max-width: 320px) {
