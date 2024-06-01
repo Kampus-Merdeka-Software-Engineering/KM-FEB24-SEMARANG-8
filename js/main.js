@@ -70,9 +70,15 @@ function onClickPopUpc1() {
 }
 
 function onClickPopUpc2() {
+  // Mendapatkan lebar layar
+  var screenWidth = window.innerWidth;
+
+  // Menentukan lebar popup berdasarkan lebar layar
+  var popupWidth = screenWidth > 767 ? '50%' : 'auto';
+
   Swal.fire({
     title: "Revenue Bike And Accecoris By Country",
-    width: '50%',
+    width: popupWidth,
     html: `
     <p style="font-size: large; text-align: justify;"> The data above shows the amount of total revenue from each country, the largest revenue is America with a total revenue of 19,409,654 bikes and accessories of 5,251,088, while the country with the smallest total revenue of bikes is Canada with a total revenue of bikes of 4,262,618. The smallest accessories revenue is France with a figure of 1,337,060. The difference in the amount of revenue is influenced by various reasons, including: trends, services and supplies, behavioral patterns, and etc.<p>
   `,
