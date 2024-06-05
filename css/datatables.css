@@ -1,0 +1,9 @@
+.heading {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1024px;
+}

@@ -45,7 +45,6 @@ window.addEventListener("scroll", scrollUp);
 // -----------------popup chart Description-----------------
 
 function onClickPopUpc1() {
-
   Swal.fire({
     title: "Revenue Bike And Accecoris Over year",
     width: 700,
@@ -71,7 +70,6 @@ function onClickPopUpc1() {
 }
 
 function onClickPopUpc2() {
-
   Swal.fire({
     title: "Revenue Bike And Accecoris By Country",
     width: 700,
@@ -97,7 +95,6 @@ function onClickPopUpc2() {
 }
 
 function onClickPopUpc3() {
-
   Swal.fire({
     title: "Bike Sales per Subcategory",
     width: 700,
@@ -123,7 +120,6 @@ function onClickPopUpc3() {
 }
 
 function onClickPopUpc4() {
-
   Swal.fire({
     title: "Bike Sales by Age Group",
     width: 700,
@@ -149,7 +145,6 @@ function onClickPopUpc4() {
 }
 
 function onClickPopUpc5() {
-
   Swal.fire({
     title: "Bike Sales by Gender",
     width: 700,
@@ -175,7 +170,6 @@ function onClickPopUpc5() {
 }
 
 function onClickPopUpc6() {
-
   Swal.fire({
     title: "Bike Sales by Country",
     width: 700,
