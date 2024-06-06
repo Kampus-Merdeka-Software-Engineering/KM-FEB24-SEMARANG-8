@@ -633,11 +633,13 @@ img {
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* .team__card-content-button:hover {
-  background: #585858;
-} */
+.team__card-content-button:hover {
+  transform: translateY(-10px) translateX(-50%);
+
+}
 
 .swiper-pagination-bullet {
   background: var(--text-color);
@@ -824,6 +826,21 @@ img {
   color: var(--text-color-light);
 }
 
+.anime_footer {
+  /* color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800; */
+  /* font-size: 2em; */
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  overflow: hidden;
+}
+
+.anime_footer .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
 /* -----SCROLL BAR----- */
 ::-webkit-scrollbar {
   width: 0.96rem; /* 9,6 */
@@ -865,6 +882,92 @@ img {
 /* Show scroll */
 .show-scroll {
   bottom: 5rem;
+}
+
+
+/* Anime JS */
+
+.team_title {
+  /* font-weight: 200;
+  font-size: 1.8em; */
+  /* text-transform: uppercase; */
+  letter-spacing: 0.5em;
+}
+
+.team_title .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+/* Loading */
+
+.loading-text {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading-text2 {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.loading-text3 {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-content {
+  display: none;
+}
+
+.spinner {
+  margin: 0 auto; /* Atur margin atas dan bawah menjadi 0, dan secara otomatis mengatur margin kiri dan kanan */
+  position: fixed; /* Menggunakan fixed untuk posisi relatif terhadap viewport */
+  top: 50%; /* Posisi tengah vertikal */
+  left: 50%; /* Posisi tengah horizontal */
+  width: 70px;
+  text-align: center;
+  transform: translate(-50%, -50%); /* Menggeser elemen ke kiri dan ke atas setengah dari tinggi dan lebarnya */
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
 }
 
 /* -----RESPONSIVE----- */

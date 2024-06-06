@@ -32,264 +32,266 @@
     <!-- Animated css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- Anime JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 </head>
 
-<body>
-
-    <!-- header & navbar -->
-    <header class="header" id="header">
-        <nav class="navbar container">
-
-            <!-- logo -->
-            <a href="#home" class="navbar__logo">
-                <img src="images/revou-logo.svg" alt="logo">
-                Team 8 Semarang
-            </a>
-
-            <!-- menu -->
-            <div class="navbar__menu" id="navbar-menu">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                        <a href="#home" class="navbar__link">Intro</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#about" class="navbar__link">About</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#team" class="navbar__link">Team</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#visual" class="navbar__link">Visualizations</a>
-                    </li>
-                </ul>
-
-                <!-- button close -->
-                <div class="navbar__close" id="navbar-close">
-                    <i class="ri-close-line"></i>
+<body id="loading-element">
+<div id="main-content">
+    
+        <!-- header & navbar -->
+        <header class="header" id="header">
+            <nav class="navbar container">
+    
+                <!-- logo -->
+                <a href="#home" class="navbar__logo">
+                    <img src="images/revou-logo.svg" alt="logo">
+                    Team 8 Semarang
+                </a>
+    
+                <!-- menu -->
+                <div class="navbar__menu" id="navbar-menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item">
+                            <a href="#home" class="navbar__link">Intro</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#about" class="navbar__link">About</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#team" class="navbar__link">Team</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#visual" class="navbar__link">Visualizations</a>
+                        </li>
+                    </ul>
+    
+                    <!-- button close -->
+                    <div class="navbar__close" id="navbar-close">
+                        <i class="ri-close-line"></i>
+                    </div>
                 </div>
-            </div>
-
-            <!-- button open -->
-            <div class="navbar__open" id="navbar-open">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-    </header>
-
-    <!-- content -->
-    <main class="content" id="content">
-
-        <!-- 1. section home -->
-        <section class="home section" id="home">
-
+    
+                <!-- button open -->
+                <div class="navbar__open" id="navbar-open">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+    
+        <!-- content -->
+        <main class="content" id="content">
+    
+            <!-- 1. section home -->
+            <section class="home section" id="home">
+    
+                <div class="shape shape__big"></div>
+                <div class="shape shape__small"></div>
+    
+                <div class="home__container container grid">
+    
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Bike Sales Analysis
+                        </h1>
+    
+                        <h2 class="home__subtitle">
+                            Unlocking Bike Sales Potential
+                        </h2>
+    
+                        <h3 class="home__elec">
+                            <i class="ri-riding-line"></i> 2011 - 2016
+                        </h3>
+                    </div>
+    
+                    <img src="images/home.png" alt="" class="home__img">
+                    <div class="home__button">
+                        <a href="#visual">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Our Visualizations
+                        </a>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- 2. section overview -->
+    
+            <!-- 3. section about -->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__group">
+                        <img src="images/about.jpg" alt="" class="about__img">
+                    </div>
+                    <div class="about__data">
+                        <h2 class="section__title about__title ">
+                            Bike Sales Analysis
+                        </h2>
+                        <p class="about__desc" style="text-align: justify;">
+                            The Bike Sales dataset spans 6 years (2011-2016) and includes data from 8 countries:
+                            Australia, Canada, France, Germany, the United Kingdom, and the United States. It tracks
+                            three sales categories: bikes, bike accessories, and bike-related clothing. Within the bike
+                            category,
+                            there are three types of bikes. The data is segmented by gender (male and female) and age
+                            groups: youth,
+                            young adults, adults, and seniors. This comprehensive dataset allows for detailed analysis of
+                            sales trends
+                            and demographic preferences across different regions and product categories.
+                    </div>
+                </div>
+            </section>
+    
+            <!-- 4. section team -->
+            <section class="team section" id="team">
+                <h2 class="section__title team_title">
+                    Meet Our Team
+                </h2>
+                <div class="team__container container swiper">
+                    <div id="swiperWrapper" class="swiper-wrapper">
+                        <!-- Tempat untuk menampilkan kartu tim -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+    
+            </section>
+    
+            <!-- 5. section visualizations -->
+            <section class="visual section" id="visual">
+                <div class="visual__container1 container grid">
+                    <h2>Visualizations</h2>
+                    <div class="visual-button">
+                        <select id="dropdown"></select>
+                        <select id="dropdownYear"></select>
+                        <button id="apply">Apply</button>
+                    </div>
+                    <div class="datatables-button">
+                        <button id="datatables" onclick="window.location.href='datatables.html'">Data Tables</button>
+                    </div>
+                </div>
+                <div class="visual__container2 container grid">
+                    <div class="chart">
+                        <canvas id="myChart1" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc1()"></i>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart2" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc2()"></i>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart3" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc3()"></i>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart4" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc4()"></i>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart6" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc6()"></i>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <canvas id="myChart5" class="myChart"></canvas>
+                        <div class="arrow">
+                            <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc5()"></i>
+                        </div>
+                    </div>
+                    <!-- dan seterusnya untuk kartu lainnya -->
+                </div>
+            </section>
+    
+        </main>
+    
+    
+        <!-- footer -->
+        <footer class="footer section" id="footer">
             <div class="shape shape__big"></div>
             <div class="shape shape__small"></div>
-
-            <div class="home__container container grid">
-
-                <div class="home__data">
-                    <h1 class="home__title">
-                        Bike Sales Analysis
-                    </h1>
-
-                    <h2 class="home__subtitle">
-                        Unlocking Bike Sales Potential
-                    </h2>
-
-                    <h3 class="home__elec">
-                        <i class="ri-riding-line"></i> 2011 - 2016
+    
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-bike-fill"></i>Bike Sales Analysis
+                    </a>
+                    <p class="footer__desc">
+                        The bike sales analysis serves a dual purpose: to streamline <br>
+                        product development and enhance sales strategies, as well as <br>
+                        to inform customers about prevailing trends.
+                    </p>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Team
                     </h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">History</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Company</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Customer</a>
+                        </li>
+                    </ul>
                 </div>
-
-                <img src="images/home.png" alt="" class="home__img">
-                <div class="home__button">
-                    <a href="#visual">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Our Visualizations
-                    </a>
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Information
+                    </h3>
+    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Find a dealer</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Services</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <!-- 2. section overview -->
-
-        <!-- 3. section about -->
-        <section class="about section" id="about">
-            <div class="about__container container grid">
-                <div class="about__group">
-                    <img src="images/about.jpg" alt="" class="about__img">
-                </div>
-                <div class="about__data">
-                    <h2 class="section__title about__title">
-                        Bike Sales Analysis
-                    </h2>
-                    <p class="about__desc">
-                        The Bike Sales dataset spans 6 years (2011-2016) and includes data from 8 countries:
-                        Australia, Canada, France, Germany, the United Kingdom, and the United States. It tracks
-                        three sales categories: bikes, bike accessories, and bike-related clothing. Within the bike
-                        category,
-                        there are three types of bikes. The data is segmented by gender (male and female) and age
-                        groups: youth,
-                        young adults, adults, and seniors. This comprehensive dataset allows for detailed analysis of
-                        sales trends
-                        and demographic preferences across different regions and product categories.
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. section team -->
-        <section class="team section" id="team">
-            <h2 class="section__title">
-                Meet Our Team
-            </h2>
-            <div class="team__container container swiper">
-                <div id="swiperWrapper" class="swiper-wrapper">
-                    <!-- Tempat untuk menampilkan kartu tim -->
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-        </section>
-
-        <!-- 5. section visualizations -->
-        <section class="visual section" id="visual">
-            <div class="visual__container1 container grid">
-                <h2>Visualizations</h2>
-                <div class="visual-button">
-                    <select id="dropdown"></select>
-                    <select id="dropdownYear"></select>
-                    <button id="apply">Apply</button>
-                </div>
-                <div class="datatables-button">
-                    <button id="datatables" onclick="window.location.href='datatables.html'">Data Tables</button>
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        Follow us
+                    </h3>
+    
+                    <ul class="footer__social">
+                        <a href="https://github.com/orgs/Kampus-Merdeka-Software-Engineering/teams/section-semarang-team-8/members" class="footer__social-link" target="_blank">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/team8semarang/" class="footer__social-link" target="_blank">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </ul>
                 </div>
             </div>
-            <div class="visual__container2 container grid">
-                <div class="chart">
-                    <canvas id="myChart1" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc1()"></i>
-                    </div>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart2" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc2()"></i>
-                    </div>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart3" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc3()"></i>
-                    </div>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart4" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc4()"></i>
-                    </div>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart6" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc6()"></i>
-                    </div>
-                </div>
-                <div class="chart">
-                    <canvas id="myChart5" class="myChart"></canvas>
-                    <div class="arrow">
-                        <i class="ri-information-2-fill" id="arrow" onclick="onClickPopUpc5()"></i>
-                    </div>
-                </div>
-                <!-- dan seterusnya untuk kartu lainnya -->
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- footer -->
-    <footer class="footer section" id="footer">
-        <div class="shape shape__big"></div>
-        <div class="shape shape__small"></div>
-
-        <div class="footer__container container grid">
-            <div class="footer__content">
-                <a href="#" class="footer__logo">
-                    <i class="ri-bike-fill"></i>Bike Sales Analysis
-                </a>
-                <p class="footer__desc">
-                    The bike sales analysis serves a dual purpose: to streamline <br>
-                    product development and enhance sales strategies, as well as <br>
-                    to inform customers about prevailing trends.
-                </p>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Team
-                </h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">About</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">History</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Company</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Customer</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Information
-                </h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Find a dealer</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Services</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">
-                    Follow us
-                </h3>
-
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://www.twitter.com" class="footer__social-link">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                </ul>
-            </div>
-        </div>
-
-        <span class="footer__copy">
-            &#169; Team 8 Semarang. All rights reserved
-        </span>
-    </footer>
+    
+            <span class="footer__copy anime_footer">
+                &#169; Team 8 Semarang. All rights reserved
+            </span>
+        </footer>
+</div>
 
     <!-- ------------------- SCROLL TOP -------------------- -->
     <a href="#" class="scrollup" id="scroll-up">

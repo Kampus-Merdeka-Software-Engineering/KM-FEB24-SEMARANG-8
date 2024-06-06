@@ -21,7 +21,7 @@
         "desc": "Universitas Pendidikan Indonesia",
         "prodi": "Matematika",
         "img": "images/barqy.png",
-        "linkedin": "https://www.linkedin.com/in/barqy-muhammad-ilhan"
+        "linkedin": "https://www.linkedin.com/in/barqymuhammadilhan/"
     },
     {
         "name": "Sandra Christella G",
@@ -76,7 +76,7 @@
         "role": "Pitch Desk PIC",
         "desc": "Universitas Muhammadiyah Jakarta",
         "prodi": "Pendidikan Bahasa",
-        "img": "images/.png",
+        "img": "images/jihan.jpg",
         "linkedin": "https://www.linkedin.com/in/jihanhajidahwibowo/"
     },
     {
@@ -96,11 +96,11 @@
         "linkedin": "https://www.linkedin.com/in/nurul-hidayah-551135222"
     },
     {
-        "name": "Nadia",
-        "role": "Quality Assurance",
-        "desc": "Unknown",
-        "prodi": "Unknown",
+        "name": "Nadia Wartiningrum",
+        "role": "Quality Assurance And Data Cleaning",
+        "desc": "Binus University",
+        "prodi": "Teknik Informatika",
         "img": "images/nadia.png",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/nadiawartiningrum/"
     }
 ]

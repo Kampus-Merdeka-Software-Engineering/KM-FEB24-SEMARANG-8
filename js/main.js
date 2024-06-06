@@ -193,3 +193,79 @@ function onClickPopUpc6() {
     },
   });
 }
+
+
+// Anime JS
+
+var textWrapper = document.querySelector('.team_title');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.team_title .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.team_title .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+
+
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.anime_footer');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.anime_footer .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.anime_footer',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+
+  // Loading
+
+  onload = function() {
+    let id = document.getElementById("loading-element")
+    let loading = document.createElement("div")
+
+    loading.innerHTML = `
+<h2 class="loading-text">Loading Content</h2>
+<h2 class="loading-text2">Wait a seconds</h2>
+<div class="spinner">
+  <div class="bounce1"></div>
+  <div class="bounce2"></div>
+  <div class="bounce3"></div>
+</div>
+<h2 class="loading-text3">Presented by Team 8 Section Semarang</h2>
+`;
+
+    id.appendChild(loading)
+
+    let loaded = setInterval(() => {
+
+    }, 1000)
+
+    setTimeout(() => {
+        clearInterval(loaded)
+        loading.style.display = 'none'; 
+        document.getElementById('main-content').style.display = 'block';
+    }, 4000)
+}

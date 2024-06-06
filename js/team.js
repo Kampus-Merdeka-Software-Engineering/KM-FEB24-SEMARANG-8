@@ -80,7 +80,7 @@ fetch("data/team.json")
                         <p class="team__card-content-prodi">
                             ${member.prodi}
                         </p>
-                        <a href="${member.linkedin}" class="team__card-content-button">
+                        <a href="${member.linkedin}" class="team__card-content-button" target="_blank">
                             <i class="ri-linkedin-box-fill"></i>
                         </a>
                     </div>
