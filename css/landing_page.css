@@ -955,6 +955,67 @@ img {
   animation-delay: -0.16s;
 }
 
+
+/* Contact Us */
+
+.contact {
+  background-color: var(--body-color); 
+  padding: 40px 0;
+}
+
+.contact__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--body-color); 
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  border: 1px solid var(--color5);
+}
+
+.contact__title {
+  text-align: center;
+  color: var(--title-color); 
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--text-color); 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color5); 
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: var(--first-color); 
+  color: var(--white-color); 
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--first-color-alt); 
+}
+
 @-webkit-keyframes sk-bouncedelay {
   0%, 80%, 100% { -webkit-transform: scale(0) }
   40% { -webkit-transform: scale(1.0) }

@@ -35,6 +35,9 @@
     <!-- Anime JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
+    <!-- Email Js -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 
 <body id="loading-element">
@@ -211,6 +214,28 @@
                     <!-- dan seterusnya untuk kartu lainnya -->
                 </div>
             </section>
+
+            <!-- 6. section Contact Us -->
+            <section class="contact" id="contact">
+                <div class="contact__container container grid">
+                    <div class="contact__data">
+                        <h2 class="section__title contact__title">
+                            Contact Us
+                        </h2>
+
+                        <form action="" onsubmit="sendEmail()">
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Name" id="name">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Email" id="email">
+                            <label for="message">Message</label>
+                            <textarea name="" id="message" cols="30" rows="10"></textarea>
+                            <button type="submit" class="contact__submit">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
     
         </main>
     
