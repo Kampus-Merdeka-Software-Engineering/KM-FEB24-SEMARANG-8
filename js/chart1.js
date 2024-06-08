@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         title: {
 
                           display: true,
-                          text: 'Total Revenue per Year',
+                          text: 'Total Revenue by Year',
                           color: "#e8af30",
                           font: {
                               size: 18,

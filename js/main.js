@@ -267,7 +267,7 @@ anime.timeline({loop: true})
         clearInterval(loaded)
         loading.style.display = 'none'; 
         document.getElementById('main-content').style.display = 'block';
-    }, 3000)
+    }, 2000)
 }
 
 

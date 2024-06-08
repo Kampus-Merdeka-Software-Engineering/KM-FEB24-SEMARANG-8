@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       console.log("data loaded", data);
 
-      // Menambahkan opsi unik ke dropdown
+      
       const years = [...new Set(data.map((item) => item.Year))];
+      years.sort((a, b) => a - b); 
+
       const dropdownYear = document.getElementById("dropdownYear");
 
-      // Menambahkan opsi "All Years"
+      
       const allOption = document.createElement("option");
       allOption.value = "All Years";
       allOption.text = "All Years";

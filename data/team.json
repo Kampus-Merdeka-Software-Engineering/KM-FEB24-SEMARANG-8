@@ -41,7 +41,7 @@
     },
     {
         "name": "Muhammad Akbar",
-        "role": "Deployment Team",
+        "role": "Deployment Team & Data Analyst",
         "desc": "Universitas Muslim Indonesia",
         "prodi": "Sistem Informasi",
         "img": "images/akbar.png",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Dita Nurjanah",
-        "role": "Deployment Team",
+        "role": "Deployment Team & Data Analyst",
         "desc": "Universitas Pendidikan Indonesia",
         "prodi": "Pedidikan Akuntansi",
         "img": "images/dita.png",
@@ -57,7 +57,7 @@
     },
     {
         "name": "Stephanie Charlotte",
-        "role": "Pitch Desk PIC",
+        "role": "Pitch Desk & Data Cleaning",
         "desc": "Universitas Udayana",
         "prodi": "Ilmu Komunikasi",
         "img": "images/stephanie.png",
@@ -65,23 +65,23 @@
     },
     {
         "name": "Widiyanti",
-        "role": "Pitch Desk PIC",
-        "desc": "Unknown",
-        "prodi": "Unknown",
+        "role": "Pitch Desk & Data Communication",
+        "desc": "Universitas Muhammadiyah Makassar",
+        "prodi": "Informatika",
         "img": "images/widianti.png",
         "linkedin": "https://www.linkedin.com/in/jihanhajidahwibowo/"
     },
     {
         "name": "Jihan Hajidah Wibowo",
-        "role": "Pitch Desk PIC",
+        "role": "Pitch Desk & Data Communication",
         "desc": "Universitas Muhammadiyah Jakarta",
         "prodi": "Pendidikan Bahasa",
-        "img": "images/jihan.jpg",
-        "linkedin": "https://www.linkedin.com/in/jihanhajidahwibowo/"
+        "img": "images/jihan.png",
+        "linkedin": "https://www.linkedin.com/in/widi-yanti-9b7605221"
     },
     {
         "name": "Husein Maliki",
-        "role": "Quality Assurance",
+        "role": "Quality Assurance & Data Communication",
         "desc": "Universitas Negeri Malang",
         "prodi": "Teknologi Pendidikan",
         "img": "images/husein.png",
@@ -89,7 +89,7 @@
     },
     {
         "name": "Nurul Hidayah H",
-        "role": "Quality Assurance",
+        "role": "Quality Assurance & Data Visualization",
         "desc": "Universitas Cendekia Abditama",
         "prodi": "Teknik Informatika",
         "img": "images/nurul.png",
@@ -97,7 +97,7 @@
     },
     {
         "name": "Nadia Wartiningrum",
-        "role": "Quality Assurance And Data Cleaning",
+        "role": "Quality Assurance & Data Cleaning",
         "desc": "Binus University",
         "prodi": "Teknik Informatika",
         "img": "images/nadia.png",

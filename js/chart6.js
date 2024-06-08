@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
               },
               title: {
                 display: true,
-                text: "Bike Sales By Country",
+                text: "Bike Sales by Country",
                 color: "#e8af30",
                 font: {
                   family: "Exo",

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     data: {
                         labels: subCategories,
                         datasets: [{
-                            label: 'Bike Sales per Subcategory',
+                            label: 'Bike Sales by Subcategory',
                             data: profits,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             },
                             title: {
                                 display: true,
-                                text: 'Bike Sales Per Sub Category',
+                                text: 'Bike Sales by Sub Category',
                                 color: "#e8af30",
                                 font: {
                                     family: 'Exo',

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   plugins: {
                       title: {
                           display: true,
-                          text: "Bike Sales By Gender",
+                          text: "Bike Sales by Gender",
                           color: "#e8af30",
                           font: {
                               family: "Exo",
