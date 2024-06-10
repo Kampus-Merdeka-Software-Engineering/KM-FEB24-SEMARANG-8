@@ -1,81 +1,83 @@
-body, table.dataTable {
-    font-family: 'Exo', sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    font-weight: lighter;
-    font-size: 15px;
+body,
+table.dataTable {
+  font-family: "Exo", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  font-size: 15px;
 }
 
 .heading {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .container {
-    max-width: 1024px;
-    padding: 20px;
-    background-color: white;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    margin: 20px auto;
+  max-width: 1024px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
 .back-button {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .back-button button#back {
-    width: 175px;
-    padding: 10px;
-    font-size: 16px;
-    color: #fff;
+  width: 175px;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
 
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .back-button button#back:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
-table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
-    background-color: #007bff;
-    color: white;
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  background-color: #007bff;
+  color: white;
 }
 
 table.dataTable {
-    width: 100%;
-    margin: 10px;
-    border-collapse: collapse;
+  width: 100%;
+  margin: 10px;
+  border-collapse: collapse;
 }
 
-table.dataTable th, table.dataTable td {
-    text-align: left;
-    padding: 8px !important;
-    box-sizing: border-box;
-    line-height: 1.5;
+table.dataTable th,
+table.dataTable td {
+  text-align: left;
+  padding: 8px !important;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
 table.dataTable thead th {
-    background-color: white;
-    border-bottom: 2px solid #dee2e6;
+  background-color: white;
+  border-bottom: 2px solid #dee2e6;
 }
 
 table.dataTable tbody tr:nth-child(odd) {
-    background-color: #f1f1f1;
+  background-color: #f1f1f1;
 }
 
 table.dataTable tbody tr:hover {
-    background-color: #efefef;
+  background-color: #efefef;
 }
