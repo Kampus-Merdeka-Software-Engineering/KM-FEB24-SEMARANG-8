@@ -762,6 +762,8 @@ img {
 .footer__container {
   row-gap: 4rem; /* 40 */
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__logo {
@@ -972,6 +974,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
 textarea {
   width: 100%;
   padding: 1rem;

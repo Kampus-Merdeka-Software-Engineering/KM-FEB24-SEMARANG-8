@@ -273,34 +273,34 @@ anime.timeline({loop: true})
 
 // Validate And Send Form
 
-(function() {
-  emailjs.init("QZbUBCAwKc93d-bG7Aglv");
-})();
+// (function() {
+//   emailjs.init("QZbUBCAwKc93d-bG7Aglv");
+// })();
 
-function sendEmail() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var message = document.getElementById('message').value;
+// function sendEmail() {
+//   var name = document.getElementById('name').value;
+//   var email = document.getElementById('email').value;
+//   var message = document.getElementById('message').value;
 
-  if (name === "" || email === "" || message === "") {
-      alert("Semua field harus diisi!");
-      return false;
-  }
+//   if (name === "" || email === "" || message === "") {
+//       alert("Semua field harus diisi!");
+//       return false;
+//   }
 
-  var templateParams = {
-      from_name: name,
-      from_email: email,
-      message_html: message
-  };
+//   var templateParams = {
+//       from_name: name,
+//       from_email: email,
+//       message_html: message
+//   };
 
-  emailjs.send('service_fh14nhs', templateParams)
-      .then(function(response) {
-          console.log('SUCCESS!', response.status, response.text);
-          alert('Email berhasil dikirim!');
-      }, function(error) {
-          console.log('FAILED...', error);
-          alert('Gagal mengirim email!');
-      });
+//   emailjs.send('service_fh14nhs', templateParams)
+//       .then(function(response) {
+//           console.log('SUCCESS!', response.status, response.text);
+//           alert('Email berhasil dikirim!');
+//       }, function(error) {
+//           console.log('FAILED...', error);
+//           alert('Gagal mengirim email!');
+//       });
 
-  return false; // Untuk mencegah submit form
-}
+//   return false; // Untuk mencegah submit form
+// }

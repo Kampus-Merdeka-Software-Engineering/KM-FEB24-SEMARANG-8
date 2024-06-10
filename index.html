@@ -223,13 +223,15 @@
                         Contact Us
                     </h2>
                     <div class="contact__data">
-                        <form action="" onsubmit="sendEmail()">
+                        <form action="" method="post" name="contact-form">
                             <label for="name">Name</label>
-                            <input type="text" placeholder="Name" id="name">
+                            <input type="text" placeholder="Name" id="name" name="Name">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Email" id="email">
+                            <input type="email" placeholder="Email" id="email" name="Email">
+                            <label for="number">Phone Number</label>
+                            <input type="number" placeholder="Phone Number" id="number" name="Phone Number">
                             <label for="message">Message</label>
-                            <textarea name="" id="message" cols="30" rows="10"></textarea>
+                            <textarea id="message" cols="30" rows="10" name="Message"></textarea>
                             <button type="submit" class="contact__submit submit-button">Kirim Pesan</button>
                         </form>
                     </div>
@@ -254,46 +256,6 @@
                         product development and enhance sales strategies, as well as <br>
                         to inform customers about prevailing trends.
                     </p>
-                </div>
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Team
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">About</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">History</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Company</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Customer</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h3 class="footer__title">
-                        Information
-                    </h3>
-
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#" class="footer__link">Feedback</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Find a dealer</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="#" class="footer__link">Services</a>
-                        </li>
-                    </ul>
                 </div>
                 <div class="footer__content">
                     <h3 class="footer__title">
@@ -343,6 +305,8 @@
     <!-- main js -->
     <script src="js/main.js"></script>
 
+    <!-- Google Sheet JS -->
+    <script src="js/gsheet.js"></script>
 </body>
 
 </html>
