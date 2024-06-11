@@ -223,21 +223,21 @@
                         Contact Us
                     </h2>
                     <div class="contact__data">
-                        <form action="" method="post" name="contact-form">
+                        <form action="" method="post" name="contact-form" onsubmit="return validateForm()">
                             <label for="name">Name</label>
-                            <input type="text" placeholder="Name" id="name" name="Name">
+                            <input type="text" placeholder="Name" id="name" name="Name" required>
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Email" id="email" name="Email">
+                            <input type="email" placeholder="Email" id="email" name="Email" required>
                             <label for="number">Phone Number</label>
-                            <input type="number" placeholder="Phone Number" id="number" name="Phone Number">
+                            <input type="text" placeholder="Phone Number" id="number" name="Phone Number" required
+                                pattern="\d+">
                             <label for="message">Message</label>
-                            <textarea id="message" cols="30" rows="10" name="Message"></textarea>
-                            <button type="submit" class="contact__submit submit-button">Kirim Pesan</button>
+                            <textarea id="message" cols="30" rows="10" name="Message" required></textarea>
+                            <button type="submit" class="contact__submit submit-button">Send Message</button>
                         </form>
                     </div>
                 </div>
             </section>
-
 
         </main>
 

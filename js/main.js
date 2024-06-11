@@ -194,59 +194,65 @@ function onClickPopUpc6() {
   });
 }
 
-
 // Anime JS
 
-var textWrapper = document.querySelector('.team_title');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+var textWrapper = document.querySelector(".team_title");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
 
-anime.timeline({loop: true})
+anime
+  .timeline({ loop: true })
   .add({
-    targets: '.team_title .letter',
-    translateX: [40,0],
+    targets: ".team_title .letter",
+    translateX: [40, 0],
     translateZ: 0,
-    opacity: [0,1],
+    opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.team_title .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
+    delay: (el, i) => 500 + 30 * i,
+  })
+  .add({
+    targets: ".team_title .letter",
+    translateX: [0, -30],
+    opacity: [1, 0],
     easing: "easeInExpo",
     duration: 1100,
-    delay: (el, i) => 100 + 30 * i
+    delay: (el, i) => 100 + 30 * i,
   });
 
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".anime_footer");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
 
-  // Wrap every letter in a span
-var textWrapper = document.querySelector('.anime_footer');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline({loop: true})
+anime
+  .timeline({ loop: true })
   .add({
-    targets: '.anime_footer .letter',
-    translateY: [-100,0],
+    targets: ".anime_footer .letter",
+    translateY: [-100, 0],
     easing: "easeOutExpo",
     duration: 1400,
-    delay: (el, i) => 30 * i
-  }).add({
-    targets: '.anime_footer',
+    delay: (el, i) => 30 * i,
+  })
+  .add({
+    targets: ".anime_footer",
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 1000
+    delay: 1000,
   });
 
+// Loading
 
+onload = function () {
+  let id = document.getElementById("loading-element");
+  let loading = document.createElement("div");
 
-  // Loading
-
-  onload = function() {
-    let id = document.getElementById("loading-element")
-    let loading = document.createElement("div")
-
-    loading.innerHTML = `
+  loading.innerHTML = `
 <h2 class="loading-text">Loading Content</h2>
 <h2 class="loading-text2">Wait a seconds</h2>
 <div class="spinner">
@@ -257,50 +263,32 @@ anime.timeline({loop: true})
 <h2 class="loading-text3">Presented by Team 8 Section Semarang</h2>
 `;
 
-    id.appendChild(loading)
+  id.appendChild(loading);
 
-    let loaded = setInterval(() => {
+  let loaded = setInterval(() => {}, 1000);
 
-    }, 1000)
+  setTimeout(() => {
+    clearInterval(loaded);
+    loading.style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+  }, 2000);
+};
 
-    setTimeout(() => {
-        clearInterval(loaded)
-        loading.style.display = 'none'; 
-        document.getElementById('main-content').style.display = 'block';
-    }, 2000)
+function validateForm() {
+  var email = document.getElementById("email").value;
+  var phoneNumber = document.getElementById("number").value;
+  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  var phonePattern = /^\d+$/;
+
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return false;
+  }
+
+  if (!phonePattern.test(phoneNumber)) {
+    alert("Please enter a valid phone number with digits only.");
+    return false;
+  }
+
+  return true;
 }
-
-
-// Validate And Send Form
-
-// (function() {
-//   emailjs.init("QZbUBCAwKc93d-bG7Aglv");
-// })();
-
-// function sendEmail() {
-//   var name = document.getElementById('name').value;
-//   var email = document.getElementById('email').value;
-//   var message = document.getElementById('message').value;
-
-//   if (name === "" || email === "" || message === "") {
-//       alert("Semua field harus diisi!");
-//       return false;
-//   }
-
-//   var templateParams = {
-//       from_name: name,
-//       from_email: email,
-//       message_html: message
-//   };
-
-//   emailjs.send('service_fh14nhs', templateParams)
-//       .then(function(response) {
-//           console.log('SUCCESS!', response.status, response.text);
-//           alert('Email berhasil dikirim!');
-//       }, function(error) {
-//           console.log('FAILED...', error);
-//           alert('Gagal mengirim email!');
-//       });
-
-//   return false; // Untuk mencegah submit form
-// }
