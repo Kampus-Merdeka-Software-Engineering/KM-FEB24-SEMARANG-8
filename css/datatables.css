@@ -3,10 +3,14 @@ body {
   padding: 0;
   background-color: #0f1e43;
   font-family: "Exo", sans-serif;
-  display: flex; /* Tambahkan ini */
-  justify-content: center; /* Tambahkan ini */
-  align-items: center; /* Tambahkan ini */
-  min-height: 100vh; /* Tambahkan ini */
+}
+
+.table-wrapper {
+  /* Tambahkan ini */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Atur ini sesuai kebutuhan */
 }
 
 table.dataTable {
