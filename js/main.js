@@ -296,7 +296,7 @@ function validateForm(event) {
 
   var emailFormat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (!email.match(emailFormat)) {
-    emailInput.setCustomValidity("Format email harus user@domain.tld");
+    emailInput.setCustomValidity("Email format must be user@domain.tld");
   } else {
     emailInput.setCustomValidity("");
   }
@@ -317,7 +317,7 @@ document.forms["contact-form"]["Email"].addEventListener("input", function () {
   var emailFormat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (!email.match(emailFormat)) {
-    emailInput.setCustomValidity("Format email harus user@domain.tld");
+    emailInput.setCustomValidity("Email format must be user@domain.tld");
   } else {
     emailInput.setCustomValidity("");
   }
