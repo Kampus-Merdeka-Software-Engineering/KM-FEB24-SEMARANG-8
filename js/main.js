@@ -271,7 +271,7 @@ onload = function () {
     clearInterval(loaded);
     loading.style.display = "none";
     document.getElementById("main-content").style.display = "block";
-  }, 2000);
+  }, 500);
 };
 
 function validateForm(event) {

@@ -763,7 +763,12 @@ img {
   row-gap: 4rem; /* 40 */
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.footer__desc {
+  width: 200px;
+  /* background-color: yellow; */
 }
 
 .footer__logo {
@@ -771,7 +776,7 @@ img {
   align-items: center;
   column-gap: 0.4rem; /* 4 */
   color: var(--title-color);
-  font-size: var(--h2-font-size);
+  font-size: var(--h3-font-size);
   font-weight: var(--font-semi-bold);
   margin-bottom: 2rem; /* 20 */
   transition: 0.3s;
@@ -822,10 +827,6 @@ img {
 }
 
 .anime_footer {
-  /* color: #402d2d;
-  padding: 40px 0;
-  font-weight: 800; */
-  /* font-size: 2em; */
   text-transform: uppercase;
   letter-spacing: 0.5em;
   overflow: hidden;
@@ -1057,12 +1058,18 @@ input[type="submit"] {
   .about__card {
     width: 150px;
   }
+  
 }
 
 @media screen and (min-width: 576px) {
   .about__group {
     width: 350px;
     justify-self: center;
+  }
+
+  .footer__desc {
+    width: 350px;
+    /* background-color: yellow; */
   }
 }
 
@@ -1096,6 +1103,11 @@ input[type="submit"] {
 
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__desc {
+    width: 450px;
+    /* background-color: yellow; */
   }
 }
 
