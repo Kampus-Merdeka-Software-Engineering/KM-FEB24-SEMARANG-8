@@ -1,30 +1,35 @@
-// -----show navbar-----
+// ----- Elements -----
 const navbarMenu = document.getElementById("navbar-menu");
 const navbarOpen = document.getElementById("navbar-open");
 const navbarClose = document.getElementById("navbar-close");
+const navbarLink = document.querySelectorAll(".navbar__link");
 
-// -----show menu-----
+// ----- Show Menu -----
 if (navbarOpen) {
   navbarOpen.addEventListener("click", () => {
     navbarMenu.classList.add("show-menu");
+    // Disable scrolling when menu is open
+    document.body.style.overflow = "hidden";
   });
 }
 
-//-----hide menu-----
+// ----- Hide Menu -----
 if (navbarClose) {
   navbarClose.addEventListener("click", () => {
     navbarMenu.classList.remove("show-menu");
+    // Re-enable scrolling when menu is closed
+    document.body.style.overflow = "auto";
   });
 }
 
-// -----hide menu setelah klik salah satu item
-const navbarLink = document.querySelectorAll(".navbar__link");
-
-function linkAction() {
-  const navbarMenu = document.getElementById("navbar-menu");
-  navbarMenu.classList.remove("show-menu");
-}
-navbarLink.forEach((n) => n.addEventListener("click", linkAction));
+// ----- Hide Menu on Link Click -----
+navbarLink.forEach((n) =>
+  n.addEventListener("click", () => {
+    navbarMenu.classList.remove("show-menu");
+    // Re-enable scrolling on link click
+    document.body.style.overflow = "auto";
+  })
+);
 
 // -----show header while scroll >= 50% screen-----
 function scrollHeader() {
