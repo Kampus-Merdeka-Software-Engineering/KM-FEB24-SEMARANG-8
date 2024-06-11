@@ -961,6 +961,13 @@ img {
   color: var(--title-color);
 }
 
+label,
+input,
+textarea,
+button {
+  font-family: "Exo", sans-serif;
+}
+
 form {
   display: flex;
   flex-direction: column;

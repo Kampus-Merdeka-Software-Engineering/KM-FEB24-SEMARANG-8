@@ -274,21 +274,51 @@ onload = function () {
   }, 2000);
 };
 
-function validateForm() {
-  var email = document.getElementById("email").value;
-  var phoneNumber = document.getElementById("number").value;
-  var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  var phonePattern = /^\d+$/;
+function validateForm(event) {
+  var form = document.forms["contact-form"];
+  var name = form["Name"].value;
+  var emailInput = form["Email"];
+  var email = emailInput.value;
+  var number = form["Phone Number"].value;
+  var message = form["Message"].value;
 
-  if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address.");
+  if (name == "" || email == "" || number == "" || message == "") {
+    alert("All fields must be filled.");
+    event.preventDefault();
     return false;
   }
 
-  if (!phonePattern.test(phoneNumber)) {
-    alert("Please enter a valid phone number with digits only.");
+  if (!number.match(/^0\d+$/)) {
+    alert("Please write the phone number starting with 0.");
+    event.preventDefault();
     return false;
   }
 
+  var emailFormat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  if (!email.match(emailFormat)) {
+    emailInput.setCustomValidity("Format email harus user@domain.tld");
+  } else {
+    emailInput.setCustomValidity("");
+  }
+
+  if (!form.reportValidity()) {
+    event.preventDefault();
+    return false;
+  }
+
+  // If all validations pass, return true
   return true;
 }
+
+// Add event listener to email input
+document.forms["contact-form"]["Email"].addEventListener("input", function () {
+  var emailInput = this;
+  var email = emailInput.value;
+  var emailFormat = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if (!email.match(emailFormat)) {
+    emailInput.setCustomValidity("Format email harus user@domain.tld");
+  } else {
+    emailInput.setCustomValidity("");
+  }
+});

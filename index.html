@@ -9,7 +9,7 @@
     <meta property="og:description" content="">
     <meta property="og:image" content="">
 
-    <title>Team 8</title>
+    <title>Team 8 - Semarang</title>
 
     <!-- favicon -->
     <link rel="shortcut icon" href="images/revou-logo.svg" type="image/x-icon">
@@ -223,14 +223,15 @@
                         Contact Us
                     </h2>
                     <div class="contact__data">
-                        <form action="" method="post" name="contact-form" onsubmit="return validateForm()">
+                        <form action="" method="post" name="contact-form" class="contact-form"
+                            onsubmit="return validateForm(event)">
                             <label for="name">Name</label>
                             <input type="text" placeholder="Name" id="name" name="Name" required>
                             <label for="email">Email</label>
                             <input type="email" placeholder="Email" id="email" name="Email" required>
                             <label for="number">Phone Number</label>
                             <input type="text" placeholder="Phone Number" id="number" name="Phone Number" required
-                                pattern="\d+">
+                                pattern="^0\d+$">
                             <label for="message">Message</label>
                             <textarea id="message" cols="30" rows="10" name="Message" required></textarea>
                             <button type="submit" class="contact__submit submit-button">Send Message</button>
