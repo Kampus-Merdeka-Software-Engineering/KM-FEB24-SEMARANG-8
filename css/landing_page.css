@@ -206,7 +206,7 @@ img {
 @media screen and (max-width: 767px) {
   .navbar__menu {
     position: fixed;
-    background-color: hsla(0, 0%, 100%, 0.1);
+    background-color: hsla(0, 0%, 0%, 0.05);
     top: 0;
     right: -100%;
     width: 100%;
