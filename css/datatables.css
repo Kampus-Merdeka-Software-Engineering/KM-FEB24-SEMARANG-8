@@ -1,16 +1,8 @@
 body {
-  margin: 0;
+  margin: 20px;
   padding: 0;
   background-color: #0f1e43;
   font-family: "Exo", sans-serif;
-}
-
-.table-wrapper {
-  /* Tambahkan ini */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh; /* Atur ini sesuai kebutuhan */
 }
 
 table.dataTable {
@@ -36,7 +28,7 @@ table.dataTable {
   background-color: white;
   border: 5px solid #ffc815;
   border-radius: 5px;
-  margin: 20px;
+  margin: 20px auto;
 }
 
 .back-button {
